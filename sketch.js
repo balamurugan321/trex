@@ -71,7 +71,7 @@ function setup() {
 
   
   trex.setCollider("rectangle",0,0,trex.width,trex.height);
-  trex.debug = true
+  trex.debug = false;
   
   score = 0;
   
@@ -87,7 +87,7 @@ function draw() {
   
   if(gameState === PLAY){
 
-    gameOver.visible = true;
+    gameOver.visible = false;
     restart.visible = false;
     
     ground.velocityX = -(4 + 3* score/100)
